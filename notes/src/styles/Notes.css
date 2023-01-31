@@ -1,0 +1,34 @@
+Box {
+    height: 100vh;
+  }
+.input-div{
+    padding: 6px 17px;
+}
+Input{
+width: 90%; /* force to expand to container's width */
+border: 4px solid #DFDFDF;
+height: 40px;
+padding: 0 10px;
+margin: 0 2px; /* negative margin = border-width + horizontal padding */
+}
+Button{
+    width: 100px;
+    height: 48px;
+    background-color:aqua;
+    cursor: pointer;
+}
+.card-item{
+    margin-top: 10px;
+    min-width: 600px;
+}
+.navbar-div{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+}
+.header{
+    color:black;
+    background-color:aqua;
+    border: 2px solid black;
+    text-shadow: 2px 2px 4px #000000;
+}
