@@ -1,0 +1,64 @@
+[
+  {
+    "type": "function",
+    "name": "createNote",
+    "inputs": [
+      {
+        "type": "string",
+        "name": "_note",
+        "internalType": "string"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "getNotes",
+    "inputs": [],
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "components": [
+          {
+            "type": "string",
+            "name": "note",
+            "internalType": "string"
+          },
+          {
+            "type": "address",
+            "name": "uid",
+            "internalType": "address"
+          }
+        ],
+        "internalType": "struct Notes.Note[]"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "notes",
+    "inputs": [
+      {
+        "type": "uint256",
+        "name": "",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "string",
+        "name": "note",
+        "internalType": "string"
+      },
+      {
+        "type": "address",
+        "name": "uid",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]

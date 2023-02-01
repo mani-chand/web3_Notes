@@ -1,10 +1,17 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
-contract Notes{
+pragma solidity ^0.8.0;
+import "@thirdweb-dev/contracts/extension/ContractMetadata.sol";
+abstract contract Notes is ContractMetadata{
     struct Note{
          string note;
          address uid;
     }
+    
+
+    constructor(string memory _note) {
+        Note memory myStruct = Note(_note,msg.sender);
+    }
+
     Note[] public notes;
     function createNote(string memory _note) public{   
         notes.push(Note(_note,msg.sender));
